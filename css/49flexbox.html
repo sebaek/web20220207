@@ -18,6 +18,27 @@
             display: flex;
             height: 300px;
         }
+
+        .menu-container {
+            display: flex;
+            background-color: #222;
+        }
+
+        .menu-item {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 7px 15px;
+            text-align: center;
+            color: azure;
+            border: 2px solid #222;
+            box-sizing: border-box;
+        }
+
+        .menu-item:hover {
+            background-color: #999;
+            border-bottom-color: gold;
+        }
+
     </style>
 </head>
 <body>
@@ -29,6 +50,17 @@
         <div id="ex3" class="item">3</div>
         <div id="ex4" class="item">4</div>
         <div id="ex5" class="item">5</div>
+    </div>
+
+    <hr>
+
+    <!-- .menu-container>.menu-item*5>lorem1 -->
+    <div class="menu-container">
+        <div class="menu-item">Lorem.</div>
+        <div class="menu-item">Blanditiis.</div>
+        <div class="menu-item">Modi!</div>
+        <div class="menu-item">Maiores?</div>
+        <div class="menu-item">Labore!</div>
     </div>
 
 </body>
