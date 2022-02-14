@@ -9,31 +9,25 @@
     </style>
 </head>
 <body>
-    <!-- h1#head$*2.note>lorem2^p#para$*2.note>lorem3 -->
-    <h1 id="head1" class="note">
+    
+    <!-- h1#head$*2>lorem2^p.para*2>lorem3 -->
+    <h1 id="head1">
         Lorem, ipsum.
     </h1>
-    <h1 id="head2" class="note">
-        Quod, maiores?
+    <h1 id="head2">
+        Asperiores, quod.
     </h1>
-    <p id="para1" class="note">
+    <p class="para">
         Lorem, ipsum dolor.
     </p>
-    <p id="para2" class="note">
-        Officia, nulla sed.
-    </p>
-    <!-- p.error*2>lorem3 -->
-    <p class="error">
-        Lorem, ipsum dolor.
-    </p>
-    <p class="error">
-        Aut, iste adipisci!
+    <p class="para">
+        Officia, voluptate dolor?
     </p>
 
     <script>
-        console.log("css 선택자 사용해서 요소 얻기");
-        console.log(document.querySelectorAll("p.note")[0]);
-        console.log(document.querySelectorAll("p.note")[1]);
+        console.log("querySelector로 하나의 요소 가져오기");
+
+        
 
     </script>
 
