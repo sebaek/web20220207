@@ -9,31 +9,21 @@
     </style>
 </head>
 <body>
-    
-    <!-- h1#head$*5>lorem3 -->
+    <!-- input#input1+h1#head1>lorem3 -->
+    <input type="text" id="input1">
     <h1 id="head1">
         Lorem, ipsum dolor.
     </h1>
-    <h1 id="head2">
-        Dolore, suscipit quod?
-    </h1>
-    <h1 id="head3">
-        Impedit, perspiciatis possimus?
-    </h1>
-    <h1 id="head4">
-        Quisquam, quaerat dignissimos.
-    </h1>
-    <h1 id="head5">
-        Adipisci, assumenda velit.
-    </h1>
 
     <script>
-        document.getElementById("head1").style.color = "blue";
-        document.querySelector("#head2").style.color = "red";
-        document.querySelector("#head3").style.backgroundColor = "yellow";
-        document.querySelector("#head4").style.border = "5px solid green";
-        document.querySelector("#head5").style.fontSize = "52px";
+        document.getElementById("input1").onkeyup = function() {
+            console.log("키업!");
+            console.log(document.getElementById("input1").value);
+            document.getElementById("head1").style.color = document.getElementById("input1").value;
+        }
+
     </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
