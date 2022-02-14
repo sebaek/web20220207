@@ -15,8 +15,17 @@
     <img src="도쿄.png" alt="">
 
     <script>
+        let current = "도쿄.png";
+
         document.querySelector("button").onclick = function() {
-            document.querySelector("img").setAttribute("src", "평창.png");
+
+            if (current === "도쿄.png") {
+                document.querySelector("img").setAttribute("src", "평창.png");
+                current = "평창.png";
+            } else {
+                document.querySelector("img").setAttribute("src", "도쿄.png");
+                current = "도쿄.png";
+            }
         }
 
     </script>
