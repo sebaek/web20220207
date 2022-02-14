@@ -16,8 +16,10 @@
         document.querySelector("#input1").onkeyup = function() {
             if (this.value.length < 3) {
                 document.querySelector("#msg").innerHTML = "3글자 이상 작성하세요.";
+                document.querySelector("#msg").style.color = "red";
             } else {
                 document.querySelector("#msg").innerHTML = "적당한 길이 입니다.";
+                document.querySelector("#msg").style.color = "black";
             }
         }
     </script>
