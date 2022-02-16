@@ -46,8 +46,23 @@
             let p1 = document.querySelector("#select1").value;
             let p2 = document.querySelector("#select2").value;
 
-            console.log(p1);
-            console.log(p2);
+            // console.log(p1);
+            // console.log(p2);
+
+            if (p1 === p2) {
+                console.log("비겼습니다.");
+            } else if ((p1 === "s") && (p2 === "p")) {
+                console.log("player 1이 이겼습니다.");
+            } else if ((p1 === "p") && (p2 === "r")) {
+                console.log("player 1이 이겼습니다.");
+            } else if ((p1 === "r") && (p2 === "s")) {
+                console.log("player 1이 이겼습니다.");
+            } else {
+                console.log("player 2가 이겼습니다.");
+            }
+
+            // player 1이 이겼습니다.
+            // player 2가 이겼습니다.
         }
 
     </script>
