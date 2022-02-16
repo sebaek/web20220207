@@ -27,6 +27,22 @@
         console.log(3 >= 5); // false
         console.log(3 < 5); // true
         console.log(3 <= 5); // true
+
+        // 다른 타입끼리 비교 (권장하지 않음)
+        let c = "3"; // string
+        let d = 3; // number
+
+        console.log(c == d); // 값이 같은가? true
+        console.log(c === d); // 값도 같고 타입도 같은가? false
+
+        let e = "5"; // string
+        let f = 6; // number
+        console.log(e != f); // true (값이 다른가?)
+        console.log(e !== f); // true (값이 다르거나 타입이 다른가?)
+
+        console.log(c != d); // false (값이 다른가?)
+        console.log(c !== d); // true (값이 다르거나 타입이 다른가?)
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
