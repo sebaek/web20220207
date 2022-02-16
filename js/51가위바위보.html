@@ -43,7 +43,25 @@
             user = Number(user);
             console.log(user, computer);
 
-            
+            if (computer === 0) {
+                document.querySelector("#computer").innerHTML = "가위";
+            } else if (computer === 1) {
+                document.querySelector("#computer").innerHTML = "바위";
+            } else {
+                document.querySelector("#computer").innerHTML = "보";
+            }
+
+            if (user === computer) {
+                document.querySelector("#result1").innerHTML = "비겼습니다";
+            } else if ((user === 0) && (computer === 1)) {
+                document.querySelector("#result1").innerHTML = "졌습니다";
+            } else if ((user === 1) && (computer === 2)) {
+                document.querySelector("#result1").innerHTML = "졌습니다";
+            } else if ((user === 2) && (computer === 0)) {
+                document.querySelector("#result1").innerHTML = "졌습니다";
+            } else {
+                document.querySelector("#result1").innerHTML = "이겼습니다";
+            }
         }
 
     </script>
