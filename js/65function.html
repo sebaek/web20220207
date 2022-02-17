@@ -12,6 +12,13 @@
     
 
     <script>
+        let voteable = function(age) {
+            if (age >= 20) {
+                console.log("투표 가능합니다.");
+            } else {
+                console.log("투표 불가능합니다.");
+            }
+        }
 
         voteable(20); // "투표 가능합니다."  인수가 20이상이면
         voteable(19); // "투표 불가능합니다." 인수가 20미만이면 
