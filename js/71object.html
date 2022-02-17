@@ -9,39 +9,51 @@
     </style>
 </head>
 <body>
-    
     <script>
-        // object {}
-        // 객체(개체)
-        // 1. 속성(property) : 값 (value, attribute, field)
-        // 2. 메소드(method) : 기능 (function, action)
 
-        let a = 3;
-        let b = "hi";
+        let a = {
+            d : 5,
+            c : 3,
+            e : 300,
+            b : 2
+        };
 
-        let c = {};
+        console.log(a.b);
+        console.log(a.c);
+        console.log(a.d);
+        console.log(a.e); // 300
 
-        // 속성(property)
-        // name : value
-        let d = {e : 30};
+        let b = {
+            a : 3,
+            b : "hello",
+            c : true
+        }
 
-        console.log(a);
-        console.log(d.e);
+        console.log(b.a);
+        console.log(b.b);
+        console.log(b.c);
 
-        // 연습
-        let f = {g : 300};
-        console.log(f.g); // 300
+        // 코드 추가
+        b.a = 5;
+        b.b = "hi";
+        b.c = false;
 
-        // property 값 변경
-        a = 5;
-        console.log(a);
-        d.e = 50;
-        console.log(d.e);
+        console.log(b.a); // 5
+        console.log(b.b); // "hi"
+        console.log(b.c); // false
 
-        // 코드작성
-        f.g = 500;
-        console.log(f.g); // 500
 
+        let c = 3;
+        console.log(c);
+
+        c = "java";
+        console.log(c);
+
+        b.a = "spring";
+        console.log(b.a);
+
+        b.c = 333;
+        console.log(b.c);
 
     </script>
 
