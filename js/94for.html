@@ -40,7 +40,13 @@
 
         let arr3 = [[6, 5, 1, 2], [0, 1, 2], [9, 8, 7, 2], [9, 3, 4]];
         // arr3의 모든 값 더해서 출력 (for of 사용)
-        
+        sum = 0;
+        for (let subArray of arr3) {
+            for (let item of subArray) {
+                sum += item;
+            }
+        }
+        console.log(sum);
 
     </script>
 
