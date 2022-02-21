@@ -16,9 +16,16 @@
 
     <script>
         document.querySelector("#button1").onclick = function() {
+            let except = document.querySelector("#input1").value;
+            except = Number(except);
+
             let gugudan = "";
 
             for (let i = 2; i <= 9; i++) {
+                if (i === except) {
+                    continue;
+                }
+
                 for (let j = 1; j <= 9; j++) {
                     gugudan += i + " X " + j + " = " + (i * j);
                     gugudan += "<br>";
