@@ -9,45 +9,17 @@
     </style>
 </head>
 <body>
-    
     <script>
-        // break : 가장 가까운 loop 종료
 
-        for (let i = 0; i < 10; i++) {
-            console.log(i);
-            break;
-        }
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+            console.log(i, j);
 
-        for (let i = 0; i < 10; i++) {
-            console.log(i);
-
-            if (i == 3) {
+            if (j === 5) {
                 break;
             }
-        }
-
-
-        // 0 ~ 4 출력
-        // 코드 작성
-
-        for (let i = 0; i < 10; i++) {
-            console.log(i);
-
-            // 코드 작성
-            if (i >= 4) {
-                break;
-            }
-        }
-
-        // 0 ~ 4 출력
-        for (let i = 0; i < 10; i++) {
-            // 코드 작성
-            if (i === 5) {
-                break;
-            }
-
-            console.log(i);
-        }
+        }    
+    }
 
     </script>
 
