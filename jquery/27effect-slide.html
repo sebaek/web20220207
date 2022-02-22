@@ -12,12 +12,13 @@
     <script>
         $(document).ready(function() {
             $("#input1").keyup(function() {
-                $("#ul1 > li").slideUp(10);
-
+                
                 let text = this.value.toLowerCase();
                 for (let item of $("#ul1 > li")) {
                     if ($(item).text().toLowerCase().includes(text)) {
-                        $(item).slideDown(10);
+                        $(item).slideDown("fast");
+                    } else {
+                        $(item).slideUp("fast");
                     }
                 }
             });
