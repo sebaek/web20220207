@@ -17,6 +17,9 @@
 
                 let btn = $("<button />");
                 btn.html("<i class='fa-solid fa-minus'></i>");
+                btn.click(function() {
+                    $(this).parent().remove();
+                });
                 li.append(btn);
 
                 $("#list1").append(li);
